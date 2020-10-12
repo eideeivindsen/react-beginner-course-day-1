@@ -65,6 +65,8 @@ const App = () => {
 
 <details><summary>Solution</summary>
 
+Add some component-state with useState and create a button that can handle (any event of your choice) that creates a toggle effect to show and hide some text.
+
 <br>
 
 ```jsx
@@ -75,7 +77,7 @@ const App = () => {
 
     return (
         <React.Fragment>
-            <button onClick={() => setToggleText(!toggleText)}>Toggle text </button>
+            <button onClick={() => setToggleText(!toggleText)}>Toggle text</button>
             {toggleText && <Text />}
         </React.Fragment>
     )
@@ -88,14 +90,17 @@ const App = () => {
 #### 📌 A2 - Multiple tabs with Text
 <br>
 
+Add some component state with useState that manages which tab the user is currently on. Create a component `<Character />` that recieves the  `name` prop. Add three buttons that resembles a tab. The user should be able to navigate through some of the characters in Førstegangstjenesten.
+
+* Ola halvorsen
+* Ahre-ketil
+* Preben lohrengren
+
+
 <details><summary>Solution</summary>
 
 ```jsx
-const Text = () => <p>This is tab numero uno</p>
-
-const Text2 = () => <p>This is tab number 2. The text is a bit different </p>
-
-const Text3 = () => <p>Text 3 is crazy good</p>
+const Character = ({ name }) => <h1>{ name }</h1>;
 
 const App = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -103,11 +108,11 @@ const App = () => {
     return (
         <React.Fragment>
             <button onClick={() => setTabIndex(0)}>Tab 1</button>
-            <button onClick={() => setTabIndex(1)}>Tab 1</button>
-            <button onClick={() => setTabIndex(2)}>Tab 1</button>
-            {tabIndex === 0 <Text />}
-            {tabIndex === 1 <Text2 />}
-            {tabIndex === 2 <Text3 />}
+            <button onClick={() => setTabIndex(1)}>Tab 2</button>
+            <button onClick={() => setTabIndex(2)}>Tab 3</button>
+            {tabIndex === 0 && <Character name="Ola Halvorsen" />}
+            {tabIndex === 1 && <Character name="Ahre-ketil" />}
+            {tabIndex === 2 && <Character name="Preben Lohrengren" />}
         </React.Fragment>
     )
 }
@@ -116,8 +121,11 @@ const App = () => {
 
 <br>
 
-#### 💎
+#### 💎 Create a login and logout page
 <br>
+
+This 
+
 
 <details><summary>Solution</summary>
 
