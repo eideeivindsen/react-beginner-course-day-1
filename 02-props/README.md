@@ -1,6 +1,5 @@
-# Properties
+# Component Properties
 
-## Component properties
 Untill now, our components have only rendered static content. To make them more dynamic, we can define a funtion parameter `props`. It is an JS object that contains properties of the component. You may use any field names on the `property` object.
 ```jsx
 const Greeting = (props) => <p>Hello { props.name }!</p>

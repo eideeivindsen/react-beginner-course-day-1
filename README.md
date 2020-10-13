@@ -1,36 +1,24 @@
 # React kurs
 
-Hei og velkommen!
+Hei og velkommen til introduksjonskurs i React!
 
-### Oppgave 1
+Kom igang!
+* `git clone https://github.com/react-kurs/dag1.git`
+* `cd dag1`
+* `npm run setup`
 
-[Placholder lenke til oppgave 1 dag 1](./oppgave1/README.md)
+Dette repoet inneholder en rekke oppgaver med tilhørende fasit.
+Oppgavebeskrivelsene ligger i README filene, og leses enkest på [github](https://github.com/react-kurs/dag1).
+* For å kjøre en bestemt oppgave kjør kommandoen `npm run XX`, hvor `XX` erstattes med oppgave-koden. Feks `npm run 01`
+* For å kjøre en fasit, kjør `npm run XXs` (s for solution). Feks `npm run 01s`
 
-### Oppgave 2
-
-[Link til oppgave 1 dag 1](./oppgave1/README.md)
-
-### Oppgave 3
-
-[Link til oppgave 1 dag 1](./oppgave1/README.md)
-
-### Tilstand (state) oppgaver
-
-[Link til oppgaver om tilstand (state)](./20-state/README.md)
-
-### Eventhåndtering oppgaver
-
-[Link til oppgaver om håndtering av events](./21-handlingevents/README.md)
-
-### Kondisjonell rendering oppgaver
-
-[Link til oppgaver om kondisjonell rendering](./22-conditionalrendering/README.md)
-
-
-### Oppgave 4
-
-[Link til oppgave 1 dag 1](./oppgave1/README.md)
-
-### Oppgave 5
-
-[Link til oppgave 1 dag 1](./oppgave1/README.md)
+## Oppgaver
+#### 00 [JavaScript concepts used in React](00-js-concepts/README.md)
+#### 01 [JSX and Components](01-components/README.md)
+#### 02 [Component Properties](02-props/README.md)
+#### 03 [State with useState hook](03-state/README.md)
+#### 04 [Handling events](04-handlingevents/README.md)
+#### 05 [Conditional Rendering](05-conditionalrendering/README.md)
+#### 06 [List and Keys](06-list-keys/README.md)
+#### 07 [Forms](07-forms/README.md)
+#### 08 [useEffect](08-useEffect/README.md)
