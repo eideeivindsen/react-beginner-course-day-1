@@ -61,7 +61,7 @@ ReactDOM.render(
 <br><br>
 
 ## Component
-In React, a component is essentialy a function that returns React content to render on screen. A component can be used multiple times in an application, and is isolated from other components. The component below is a function without any paramaters, that returns the JSX content `<p>Hello world!</p>`.
+In React, a component is essentialy a function that returns React content to render on screen. A component can be used multiple times in an application, and is isolated from other components. The component below is a function without any paramaters, that returns the JSX content `<p>Hello world!</p>`. Note that component names are capitalized.
 ```jsx
 // greeting.jsx
 const Greeting = () => <p>Hello world!</p>
