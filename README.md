@@ -2,6 +2,11 @@
 
 Hei og velkommen til introduksjonskurs i React!
 
+## Installer
+* [git](https://git-scm.com/downloads)
+* [node](https://nodejs.org/en/download/)
+* [vscode](https://code.visualstudio.com/download) (eller en annen code-editor)
+
 ## Kom igang!
 * `git clone https://github.com/react-kurs/dag1.git`
 * `cd dag1`
