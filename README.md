@@ -15,7 +15,8 @@ Hei og velkommen til introduksjonskurs i React!
 ## Intro
 Dette repoet inneholder en rekke oppgaver med tilhørende fasit.
 Oppgavebeskrivelsene ligger i `README.md` filene, og leses enkest på [github](https://github.com/react-kurs/dag1).
-* For å starte en bestemt oppgave, kjør kommandoen `npm run XX`. Feks `npm run 01`
+
+* For å starte en oppgave, kjør kommandoen `npm run XX`. Feks `npm run 01`
 * For å starte en fasit, kjør `npm run XXs` (s for solution). Feks `npm run 01s`
 
 ## Oppgaver
