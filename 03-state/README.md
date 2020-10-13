@@ -4,7 +4,7 @@
 
 `useState` is one of many ways in which you can describe state in react. State is essential; it's what creates the layer in which you create websites that are dynamic and and reacts to how you're using a web application.
 
-The useState hook, and all other hooks are represented by the prefix of `use`.
+The useState hook, and all other hooks are represented by the prefix of `use`. Here's an example of the useState hook, that keep track of component state.
 
 ```js
 const [state, setState] = useState(initialValue);
@@ -67,7 +67,11 @@ const App = () => {
 
 #### 💎 A3 - Create state and display state with JavaScript-Objects and lists
 
-Refactor all the previously declared states and create a single useState hook with a javaScript object. Also, create state with some of your favorite colors using a list.
+Refactor all the previously declared states by creating a single state with a javaScript object. Also, create state with some of your favorite colors using a list.
+
+```jsx
+const [someState, setSomeState] = useState({ entry: "entry" })
+```
 
 <details><summary>🔑 Solution</summary>
 <br>
