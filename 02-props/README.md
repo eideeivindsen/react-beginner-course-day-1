@@ -42,6 +42,7 @@ const Avatar = ({ name, imageUrl }) => {
 }
 ```
 ```css
+/* index.css */
 .avatar {
     margin: 20px;
     display: inline-block;
@@ -63,8 +64,8 @@ const Avatar = ({ name, imageUrl }) => {
 
 <br><br>
 
-#### 💎 A2 - Create a custom component that renders images from `picsum.photos`
-See https://picsum.photos/ for how you can use the the properties `id`, `width`, `height`, `grayscale`, and `blur`. You do not need to implement them all, `grayscale` and `blur` will be more difficult. Remember to set suiting default values in your component.
+#### 💎 A2 - Create a custom component that renders a single image from `picsum.photos`
+See https://picsum.photos/ for how you can use the the properties `id`, `width`, `height`, `grayscale`, and `blur`. You do not need to implement them all. `grayscale` and `blur` will be more difficult. Remember to set suiting default values in your component.
 
 Add a few `Picsum` images below the avatars in `App`.
 
