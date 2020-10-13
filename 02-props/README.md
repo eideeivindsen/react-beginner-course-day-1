@@ -75,9 +75,10 @@ Hint: Use a template string ```<img src={`https://picsum.photos/${width}`} />```
 
 ```jsx
 const Picsum = ({ id=0, width=200, height=150, grayscale=false, blur=0 }) => {
-    const blurString = blur > 0 ? `blur=${blur}` : ''
-    const grayscaleString = grayscale ? '&grayscale' : ''
-    return <img src={`https://picsum.photos/id/${id}/${width}/${height}?${blurString}${grayscaleString}`} />
+    const params = []
+    blur > 0 && params.push(`blur=${blur}`)
+    grayscale && params.push('grayscale')
+    return <img src={`https://picsum.photos/id/${id}/${width}/${height}?${params.join('&')}`} />
 }
 ```
 ```html
