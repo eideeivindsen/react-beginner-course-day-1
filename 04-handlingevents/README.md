@@ -195,7 +195,7 @@ setState(({ count, ...prevState}) => ({ ...prevState, count: count + 1}))
 <br>
 
 ```jsx
-const Both = () => {
+const App = () => {
   const [state, setState] = useState({ backgroundColor: "white", count: 0 })
 
   const increment = () => setState(prevState => {

@@ -5,28 +5,25 @@ const HandlingEvents = () => {
   const [teslaBattery, setTeslaBattery] = useState(100);
   const [count, setCount] = useState(0);
 
-  const handleTeslaDrive = (e) => {
-    e.preventDefault();
+  const handleTeslaDrive = () => {
     setTeslaBattery(previousBatteryLife => previousBatteryLife - 30);
   }
 
   const handleTeslaCharge = () => setTeslaBattery(() => 100);
 
-  const handleIncrement = e => {
-    e.preventDefault();
-
+  const handleIncrement = () => {
     for(let i = 0; i < 10000; i++){
       setCount(i);
     } 
   }
   
-  const handleTeslaErrorCharge = () => setTeslaBattery(prev => 100);
+  const handleTeslaErrorCharge = () => setTeslaBattery(() => 100);
 
-  const handleKeyPress = e => {
+  const handleKeyPress = () => {
     console.log(e.key);
   }
 
-  const handleMouseEnter = e => {
+  const handleMouseEnter = () => {
     console.log("Mouse enter");
   }
 
