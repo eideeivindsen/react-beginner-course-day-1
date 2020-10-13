@@ -92,7 +92,7 @@ tail // [3, 4, 5, 6, 7, 8]
 
 <br>
 
-#### 📌 A5 - Create a function that returs the size (area) of a rectangle `{ width: 5, height: 8 }`
+#### 📌 B1 - Create a function that returs the size (area) of a rectangle `{ width: 5, height: 8 }`
 JavaScript funcions are able to directly destructure input argument directly. The `size` function should destructure the rectangle object similarly to how the `sum` function below destructures the input list.
 ```js
 const sum = ([a, b]) => a + b
@@ -107,7 +107,7 @@ const size = ({ width, height }) => width * height
 
 <br>
 
-#### 📌 A6 - What are the values of `rest`, `number`, `second`?
+#### 📌 B2 - What are the values of `rest`, `number`, `second`?
 ```js
 const { age, height, weight, ...rest } = { name: "John", age: 28, height: 193, weight: 83 }
 const [, number] = [1, 2, 3, 4]
@@ -125,7 +125,7 @@ second: undefined
 
 <br>
 
-#### 💎 A7 - Use destructuring to create functions returning the first and second element in a list
+#### 💎 B3 - Use destructuring to create functions returning the first and second element in a list
 <details><summary>🔑 Solution</summary>
 
 ```js
@@ -161,7 +161,7 @@ Remember that order matters! `{ width: 5, ...cube }` will first assign `width: 5
 
 <br>
 
-#### 📌 A8 - Create a function that combines all the attributes from two objects in a single new object
+#### 📌 C1 - Create a function that combines all the attributes from two objects in a single new object
 Assume that the two objects don't share any attributes, so that nothing will be overwritten. Note that objects must be wrapped in parentheses if returned directly from an arrow function: `=> ({})`. Otherwise, the compiler will think the object is a function body.
 <details><summary>🔑 Solution</summary>
 ```js
