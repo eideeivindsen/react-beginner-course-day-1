@@ -2,7 +2,7 @@
 
 ## JSX
 
-JSX is a syntax extensions to JavaScript that enables HTML-like syntax in JavaScript code. The JSX code `<p>Hello</p>` is essentially a JavaScript object. JSX is used to define what is rendered on the screen in React. Place `{ }` inside JSX code to write common javascript, as done with `{ someone }` below. 
+JSX is a syntax extensions to JavaScript that enables HTML-like syntax in JavaScript code. The JSX code `<p>Hello</p>` is essentially a JavaScript object. JSX is used to define what is rendered on the screen in React. Place `{ }` inside JSX code to write common javascript, as done with `{ someone }` below.
 ```jsx
 const jsx = <p>Hello JSX!</p>
 
@@ -35,7 +35,12 @@ Look at `index.html`, `index.css`, and `index.js` inside `01-components/`. Run t
 
 <br>
 
-#### 📌 A2 - Render something with JSX
+#### 📌 A2 - Hot reaload!
+Delete the css rule inside `index.css`, while react is running. The website should update immediately when you save the file.
+
+<br>
+
+#### 📌 A3 - Render something with JSX
 Make changes to `index.js`, so that a JSX element is rendered on screen. Remember to first import React, as described earlier.
 <details><summary>🔑 Solution</summary>
 
@@ -52,6 +57,7 @@ ReactDOM.render(
 ```
 </details>
 
+
 <br><br>
 
 ## Component
@@ -62,11 +68,11 @@ const Greeting = () => <p>Hello world!</p>
 
 export default Greeting;
 ```
-Multiple components may be defined in the same file, but are typically defined in separate files. `export default greeting;` exports the component so that other components can import it from `greeting.jsx`.
+Multiple components may exist in the same file, but are typically defined in separate files. `export default Greeting;` exports the component so that other components can import it from `greeting.jsx`.
 
-More complex components often have a function body, and use a `return` statement to define wat is rendered. The `Time` component below imports `Greeting` and renders it along with the current date and time. As only a single value can be returned, the two elements are place inside `<> </>`. These tags will not be visible in the rendered HTML.
+More complex components often have a function body, and use a `return` statement to define what is rendered. The `Time` component below imports `Greeting` and renders it along with the current date and time. As only a single value can be returned by a function, the two elements are placed inside `<> </>`. These tags will not be visible in the rendered HTML.
 ```jsx
-import Greeting from "./greeting.jsx"
+import Greeting from './greeting.jsx'
 
 const Time = () => {
     const now = new Date();
@@ -78,3 +84,85 @@ const Time = () => {
 }
 ```
 
+#### 📌 B1 - Create your first component
+Open `App.jsx` and return some JSX instead of `null`. Then, in `index.js`, import the `App` from `'./App'` and render your `<App />` component!
+<details><summary>🔑 Solution</summary>
+
+```jsx
+// App.jsx
+import React from 'react'
+
+const App = () => <>
+    <h1>Go big!</h1>
+</>
+
+export default App
+```
+```jsx
+// index.jsx
+import ReactDOM from 'react-dom'
+import React from 'react'
+import App from './App'
+
+import './index.css'
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)
+```
+</details>
+
+<br>
+
+#### 📌 B2 - Create another component in `App.jsx` and render it inside the `App` component
+You may create anything you want. If you use your new component multiple times inside the `App` component, that is even better!
+
+<details><summary>🔑 Solution</summary>
+
+```jsx
+// App.jsx
+import React from 'react'
+
+const App = () => <>
+    <Star /><Star /><Star />
+    <h1>Go big!</h1>
+    <Star /><Star /><Star />
+</>
+
+const Star = () => <span>⭐</span>
+
+export default App
+```
+</details>
+
+<br>
+
+#### 💎 B3 - Move the new component to a separate file, and import it in `App.jsx`
+Import your compoment the same way `index.js` imports `App`, with a relative filepath and without the file extension: `import App from './App'`.
+<details><summary>🔑 Solution</summary>
+
+```jsx
+// App.jsx
+import React from 'react'
+import Star from './Star'
+
+const App = () => <>
+    <Star /><Star /><Star />
+    <h1>Go big!</h1>
+    <Star /><Star /><Star />
+</>
+
+const Star = () => <span>⭐</span>
+
+export default App
+```
+```jsx
+// Star.jsx
+import React from 'react'
+
+const Star = () => <span>⭐</span>
+
+export default Star
+```
+</details>
