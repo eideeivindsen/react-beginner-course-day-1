@@ -27,8 +27,8 @@ JSX elements such as `div` and `h2` also accept certain properties properties in
 
 <br>
 
-#### 📌 A1 - Fix the `Avatar` component so that it displays `name` and `imageUrl` nicely
-Use appropriate `className` values and style the component in `index.css`.
+#### 📌 A1 - Fix the `Avatar` component in `App.jsx` so that the App displays the profiles nicely side by side
+Use appropriate `className` values and style in `index.css`.
 
 <details><summary>🔑 Solution</summary>
 
@@ -36,7 +36,7 @@ Use appropriate `className` values and style the component in `index.css`.
 // App.jsx
 const Avatar = ({ name, imageUrl }) => {
     return <div className="avatar">
-        <img className="profilepic" src={imageUrl}>
+        <img className="profilepic" src={imageUrl} />
         <p className="name">{name}</p>
     </div>
 }
@@ -58,7 +58,6 @@ const Avatar = ({ name, imageUrl }) => {
     height: auto;
     border-radius: 1000px;
 }
-
 ```
 </details>
 
