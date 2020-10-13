@@ -2,7 +2,7 @@
 
 ## JSX
 
-JSX is a syntax extensions to JavaScript that enables HTML-like syntax in JavaScript code. The JSX code `<p>Hello</p>` is essentially a JavaScript object. JSX is used to define what is rendered on the screen in React. Place `{ }` inside JSX code to write common javascript, as done with `{ someone }` below. 
+JSX is a syntax extensions to JavaScript that enables HTML-like syntax in JavaScript code. The JSX code `<p>Hello</p>` is essentially a JavaScript object. JSX is used to define what is rendered on the screen in React. Place `{ }` inside JSX code to write common javascript, as done with `{ someone }` below.
 ```jsx
 const jsx = <p>Hello JSX!</p>
 
@@ -35,7 +35,12 @@ Look at `index.html`, `index.css`, and `index.js` inside `01-components/`. Run t
 
 <br>
 
-#### 📌 A2 - Render something with JSX
+#### 📌 A2 - Hot reaload!
+Delete the css rule inside `index.css`, while react is running. The website should update immediately when you save the file.
+
+<br>
+
+#### 📌 A3 - Render something with JSX
 Make changes to `index.js`, so that a JSX element is rendered on screen. Remember to first import React, as described earlier.
 <details><summary>🔑 Solution</summary>
 
@@ -51,6 +56,7 @@ ReactDOM.render(
 )
 ```
 </details>
+
 
 <br><br>
 
