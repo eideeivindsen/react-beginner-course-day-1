@@ -2,15 +2,16 @@
 
 Hei og velkommen til introduksjonskurs i React!
 
-Kom igang!
+## Kom igang!
 * `git clone https://github.com/react-kurs/dag1.git`
 * `cd dag1`
 * `npm run setup`
 
+## Intro
 Dette repoet inneholder en rekke oppgaver med tilhørende fasit.
-Oppgavebeskrivelsene ligger i README filene, og leses enkest på [github](https://github.com/react-kurs/dag1).
-* For å kjøre en bestemt oppgave kjør kommandoen `npm run XX`, hvor `XX` erstattes med oppgave-koden. Feks `npm run 01`
-* For å kjøre en fasit, kjør `npm run XXs` (s for solution). Feks `npm run 01s`
+Oppgavebeskrivelsene ligger i `README.md` filene, og leses enkest på [github](https://github.com/react-kurs/dag1).
+* For å starte en bestemt oppgave, kjør kommandoen `npm run XX`, hvor `XX` erstattes med oppgave-koden. Feks `npm run 01`
+* For å starte en fasit, kjør `npm run XXs` (s for solution). Feks `npm run 01s`
 
 ## Oppgaver
 #### 00 [JavaScript concepts used in React](00-js-concepts/README.md)
