@@ -84,6 +84,8 @@ const Time = () => {
 }
 ```
 
+<br>
+
 #### 📌 B1 - Create your first component
 Open `App.jsx` and return some JSX instead of `null`. Then, in `index.js`, import the `App` from `'./App'` and render your `<App />` component!
 <details><summary>🔑 Solution</summary>
@@ -125,12 +127,12 @@ You may create anything you want. If you use your new component multiple times i
 import React from 'react'
 
 const App = () => <>
-    <Star /><Star /><Star />
-    <h1>Go big!</h1>
-    <Star /><Star /><Star />
+    <Stars /><Stars />
+    <h1><Stars /></h1>
+    <Stars /><Stars />
 </>
 
-const Star = () => <span>⭐</span>
+const Stars = () => <span>⭐⭐⭐⭐⭐</span>
 
 export default App
 ```
@@ -145,24 +147,22 @@ Import your compoment the same way `index.js` imports `App`, with a relative fil
 ```jsx
 // App.jsx
 import React from 'react'
-import Star from './Star'
+import Stars from './Stars'
 
 const App = () => <>
-    <Star /><Star /><Star />
-    <h1>Go big!</h1>
-    <Star /><Star /><Star />
+    <Stars /><Stars />
+    <h1><Stars /></h1>
+    <Stars /><Stars />
 </>
-
-const Star = () => <span>⭐</span>
 
 export default App
 ```
 ```jsx
-// Star.jsx
+// Stars.jsx
 import React from 'react'
 
-const Star = () => <span>⭐</span>
+const Stars = () => <span>⭐⭐⭐⭐⭐</span>
 
-export default Star
+export default Stars
 ```
 </details>
