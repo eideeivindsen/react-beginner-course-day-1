@@ -5,9 +5,9 @@ Untill now, our components have only rendered static content. To make them more 
 ```jsx
 const Greeting = (props) => <p>Hello { props.name }!</p>
 ```
-With many props, the `props.` notation will quickly become anoying. It is therefore common to destructure the props directly in the function. To use multiple properties, simply write multiple variable names when destructuring.
+With many props, the `props.` notation will quickly become anoying. It is therefore common to destructure the props directly in the function. To use multiple properties, simply write multiple variable names when destructuring. Use `=` when destructuring to set default values.
 ```jsx
-const Greeting = ({ name }) => <p>Hello { name }!</p>
+const Greeting = ({ name, smiley="😄" }) => <p>Hello { name }! { smiley }</p>
 ```
 
 The properties used by the component, such as `name`, can then be defined when the component is used. Rembember to use `{ }` if the property type is not a string.
@@ -63,3 +63,25 @@ const Avatar = ({ name, imageUrl }) => {
 
 <br><br>
 
+#### 💎 A2 - Create a custom component that renders images from `picsum.photos`
+See https://picsum.photos/ for how you can use the the properties `id`, `width`, `height`, `grayscale`, and `blur`. You do not need to implement them all, `grayscale` and `blur` will be more difficult. Remember to set suiting default values in your component.
+
+Add a few `Picsum` images below the avatars in `App`.
+
+Hint: Use a template string ```<img src={`https://picsum.photos/${width}`} />``` 
+
+<details><summary>🔑 Solution</summary>
+
+```jsx
+const Picsum = ({ id=0, width=200, height=150, grayscale=false, blur=0 }) => {
+    const blurString = blur > 0 ? `blur=${blur}` : ''
+    const grayscaleString = grayscale ? '&grayscale' : ''
+    return <img src={`https://picsum.photos/id/${id}/${width}/${height}?${blurString}${grayscaleString}`} />
+}
+```
+```html
+<Picsum />
+<Picsum id={64} width={200} height={100} blur={1} />
+<Picsum id={100} width={200} height={200} blur={5} grayscale={true} />
+```
+</details>

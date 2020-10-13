@@ -9,6 +9,9 @@ const App = () => <>
     <Avatar name="With" imageUrl="https://picsum.photos/200?4" />
     <Avatar name="Random" imageUrl="https://picsum.photos/200?5" />
     <Avatar name="Content" imageUrl="https://picsum.photos/200?6" />
+    <Picsum />
+    <Picsum id={64} width={200} height={100} blur={1} />
+    <Picsum id={100} width={200} height={200} blur={5} grayscale={true} />
 </>
 
 const Avatar = ({ name, imageUrl }) => {
@@ -16,6 +19,12 @@ const Avatar = ({ name, imageUrl }) => {
         <img className="profilepic" src={imageUrl} />
         <p className="name">{name}</p>
     </div>
+}
+
+const Picsum = ({ id=0, width=200, height=150, grayscale=false, blur=0 }) => {
+    const blurString = blur > 0 ? `blur=${blur}` : ''
+    const grayscaleString = grayscale ? '&grayscale' : ''
+    return <img src={`https://picsum.photos/id/${id}/${width}/${height}?${blurString}${grayscaleString}`} />
 }
 
 export default App

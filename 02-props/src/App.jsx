@@ -11,6 +11,11 @@ const App = () => <>
     <Avatar name="Content" imageUrl="https://picsum.photos/200?6" />
 </>
 
+
 const Avatar = () => null
+
+
+const Picsum = () => null
+
 
 export default App
