@@ -1,7 +1,7 @@
 # Properties
 
 ## Component properties
-Untill now, our components have only rendered static content. To make them more dynamic, we can define a funtion parameter `props`. This argument is an object that contains certain properties about the component. You may use any property name.
+Untill now, our components have only rendered static content. To make them more dynamic, we can define a funtion parameter `props`. It is an JS object that contains properties of the component. You may use any field names on the `property` object.
 ```jsx
 const Greeting = (props) => <p>Hello { props.name }!</p>
 ```
@@ -10,7 +10,7 @@ With many props, the `props.` notation will quickly become anoying. It is theref
 const Greeting = ({ name, smiley="😄" }) => <p>Hello { name }! { smiley }</p>
 ```
 
-The properties used by the component, such as `name`, can then be defined when the component is used. Rembember to use `{ }` if the property type is not a string.
+The properties are passed to the compomonent similarly to in HTML. Rembember to use `{ }` if the property type is not a string, so that the value can be JS code.
 ```html
 <Greeting name="React" />
 <VerticalSpace height={ 20 } />
@@ -18,7 +18,7 @@ The properties used by the component, such as `name`, can then be defined when t
 
 <br>
 
-JSX elements such as `div` and `h2` also accept certain properties properties in addition to those in common HTML
+JSX elements such as `div` and `h2` also accept certain properties in addition to those in common HTML
 * `className` is used to give a component a HTML class
 * `style` is used to style the component, with css such as ``
 ```html
@@ -28,7 +28,7 @@ JSX elements such as `div` and `h2` also accept certain properties properties in
 <br>
 
 #### 📌 A1 - Fix the `Avatar` component in `App.jsx` so that the App displays the profiles nicely side by side
-Use appropriate `className` values and style in `index.css`.
+Destructure the `name` and `imageUrl` properties. Use appropriate `className` values and style in `index.css`.
 
 <details><summary>🔑 Solution</summary>
 
