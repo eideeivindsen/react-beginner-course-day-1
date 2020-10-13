@@ -31,7 +31,7 @@ ReactDOM.render(element, document.getElementById('root'));
 <br>
 
 #### 📌 A1 - Inspect and run the code in 01-components
-Look at `index.html`, `index.css`, and `index.js` inside `01-components/`. Run the command `npm run 01` from within the project root folder to launch the React application. A webpage with the content "It's working!" should appear. If you inspect the web content (right click => inpsect), you can see that something is added into the `id="root"` element in `index.html`.
+Look at `index.html`, `index.css`, and `index.js` inside `01-components/`. Run the command `npm run 01` from within the project root folder to launch the React application. A webpage with the content "It's working!" should appear. If you inspect the web content (right click => inpsect), you can see that `ReactDOM.render` added the text into the `id="root"` element in `index.html`.
 
 <br>
 
@@ -41,7 +41,7 @@ Delete the css rule inside `index.css`, while react is running. The website shou
 <br>
 
 #### 📌 A3 - Render something with JSX
-Make changes to `index.js`, so that a JSX element is rendered on screen. Remember to first import React, as described earlier.
+Make changes to `index.js`, so that a JSX element is rendered on screen. Remember to first import React, otherwise JSX won't work.
 <details><summary>🔑 Solution</summary>
 
 ```jsx
@@ -70,7 +70,7 @@ export default Greeting;
 ```
 Multiple components may exist in the same file, but are typically defined in separate files. `export default Greeting;` exports the component so that other components can import it from `greeting.jsx`.
 
-More complex components often have a function body, and use a `return` statement to define what is rendered. The `Time` component below imports `Greeting` and renders it along with the current date and time. As only a single value can be returned by a function, the two elements are placed inside `<> </>`. These tags will not be visible in the rendered HTML.
+More complex components often have a function body, and use a `return` statement to define what is rendered. The `Time` component below imports `Greeting` and renders it along with the current date and time. As only a single value can be returned by a function, the two elements are placed inside `<> </>`. These tags are called [fragments](https://reactjs.org/docs/fragments.html), and will not be visible in the rendered HTML.
 ```jsx
 import Greeting from './greeting.jsx'
 
@@ -118,7 +118,7 @@ ReactDOM.render(
 <br>
 
 #### 📌 B2 - Create another component in `App.jsx` and render it inside the `App` component
-You may create anything you want. If you use your new component multiple times inside the `App` component, that is even better!
+You may create anything you want. It could be a `<span>` containing a couple of stars ⭐. If you use your new component multiple times inside the `App` component, that's even better!
 
 <details><summary>🔑 Solution</summary>
 
