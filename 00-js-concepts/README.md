@@ -125,7 +125,7 @@ second: undefined
 
 <br>
 
-#### 💎 B3 - Use destructuring to create functions returning the first and second element in a list
+#### 💎 B3 - Use destructuring to create two separate functions, returning the first and second element in a list
 <details><summary>🔑 Solution</summary>
 
 ```js
