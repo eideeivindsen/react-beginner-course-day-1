@@ -81,7 +81,7 @@ const { width, height } = rectangle
 width * height // 40
 ```
 
-When the final value has `...` in front of it, all the values not expliciltly destructured will become a new list or object, and assigned to the rest variable. 
+When the final value has `...` in front of it, all the values not expliciltly destructured will become a new list or object, and assigned to the rest variable.
 ```js
 const { name, weight, ...rest } = { name: "John", age: 28, height: 193, weight: 83 }
 rest // { age: 25, height: 193 }
@@ -93,7 +93,7 @@ tail // [3, 4, 5, 6, 7, 8]
 <br>
 
 #### 📌 B1 - Create a function that returs the size (area) of a rectangle `{ width: 5, height: 8 }`
-JavaScript funcions are able to directly destructure input argument directly. The `size` function should destructure the rectangle object similarly to how the `sum` function below destructures the input list.
+JavaScript funcions are able to destructure input argument directly. The `size` function should destructure the rectangle object similarly to how the `sum` function below destructures the list input.
 ```js
 const sum = ([a, b]) => a + b
 sum([1, 2]) // 3
