@@ -168,7 +168,7 @@ const Counter = () => {
 
 #### 💎 Combine A1 and A2 by using a single state Object
 
-Use A1 and A2 and combine both their states into a javaScript-Object. The main component should include the behaviour from A1 and A2; incrementing and decrementing a count, and a `<div>` that changes color when hovering over it. This exercise focus on becoming comfortable with the usage and handling javascript objects. 
+Use A1 and A2 and combine both their states into a javaScript-Object. The main component should include the behaviour from A1 and A2; incrementing and decrementing a count, and a `<div>` that changes color when hovering over it. This exercise focus on becoming comfortable with the usage and handling of javascript objects. 
 
 <details><summary>🔑 Solution</summary>
 
