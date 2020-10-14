@@ -18,8 +18,11 @@ Oppgavebeskrivelsene ligger i `README.md` filene, og leses enkest på [github](h
 
 De fleste oppgaver innenfor hver gruppe har en tilhørende fasit-dropdown som viser et forslag til løsning. Det finnes også et løsningsforslag for sluttresultatet av alle oppgavene innenfor en kategori. Dette ligger i XX-solution mappa inne i kategorien.
 
+Det anbefales å starte på oppgave `01-components`, og gå tilbake til `00-js-concepts` dersom det blir vanskelig.
+
 * For å starte en oppgave, kjør kommandoen `npm run XX`. Feks `npm run 01`
 * For å starte et løsningsforslag, kjør `npm run XXs` (s for solution). Feks `npm run 01s`
+* Trykk `Ctrl` `c` for å avslutte
 
 ## Oppgaver
 #### 00 [JavaScript concepts used in React](00-js-concepts/README.md)
