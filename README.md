@@ -11,6 +11,7 @@ Hei og velkommen til introduksjonskurs i React!
 * `git clone https://github.com/react-kurs/dag1.git`
 * `cd dag1`
 * `npm run setup`
+* `code .`
 
 ## Intro
 Dette repoet inneholder oppgaver innenfor en rekke kategorier.
