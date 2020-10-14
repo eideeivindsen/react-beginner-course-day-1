@@ -27,7 +27,7 @@ JSX elements such as `div` and `h2` also accept certain properties in addition t
 <br>
 
 #### 📌 A1 - Fix the `Avatar` component in `App.jsx` so that the App displays the profiles nicely side by side
-Destructure the `name` and `imageUrl` properties. Use appropriate `className` values and style in `index.css`.
+Destructure the `name` and `imageUrl` properties. Use appropriate `className` values and style in `index.css`. Ideally, the name should be displayed below the profile picture, and be centered.
 
 <details><summary>🔑 Solution</summary>
 
