@@ -15,7 +15,7 @@ JSX and common JS can be nested inside each other, for more complex content.
 const jsx = <p>Hello JSX!</p>
 const paragraphs = <div>
     { jsx }
-    { <p>{ 1 + 2 }</p> }
+    <p>{ 1 + 2 }</p>
 </div>
 ```
 
@@ -87,7 +87,7 @@ const Time = () => {
 <br>
 
 #### 📌 B1 - Create your first component
-Open `App.jsx` and return some JSX instead of `null`. Then, in `index.js`, import the `App` from `'./App'` and render your `<App />` component!
+Open `App.jsx` and return some JSX instead of `null`. Then, in `index.jsx`, import the `App` from `'./App'` and render your `<App />` component!
 <details><summary>🔑 Solution</summary>
 
 ```jsx
@@ -141,7 +141,7 @@ export default App
 <br>
 
 #### 💎 B3 - Move the new component to a separate file, and import it in `App.jsx`
-Import your compoment the same way `index.js` imports `App`, with a relative filepath and without the file extension: `import App from './App'`.
+Import your compoment the same way `index.js` imports `App`, with a relative filepath and without the file extension: `import App from './App'` (substutite `App` with your component name).
 <details><summary>🔑 Solution</summary>
 
 ```jsx
