@@ -31,7 +31,7 @@ ReactDOM.render(element, document.getElementById('root'));
 <br>
 
 #### 📌 A1 - Inspect and run the code in 01-components
-Look at `index.html`, `index.css`, and `index.js` inside `01-components/`. Run the command `npm run 01` from within the project root folder to launch the React application. A webpage with the content "It's working!" should appear. If you inspect the web content (right click => inpsect), you can see that `ReactDOM.render` added the text into the `id="root"` element in `index.html`.
+Look at `index.html`, `index.css`, and `index.jsx` inside `01-components/`. Run the command `npm run 01` from within the project root folder to launch the React application. A webpage with the content "It's working!" should appear. If you inspect the web content (right click => inpsect), you can see that `ReactDOM.render` added the text into the `id="root"` element in `index.html`.
 
 <br>
 
