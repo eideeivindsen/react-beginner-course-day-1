@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const App = () => {
     const [state, setState] = useState(
-        {count: 0, name: "Joergen", hasCorona: false }
+        {count: 0, name: "Joergen", hasCar: false }
         );
 
     const [favColors, setFavColors] = useState(
@@ -12,7 +12,7 @@ const App = () => {
     const {
         count,
         name,
-        hasCorona
+        hasCar
     } = state;
 
     const [ pink, blue, red ] = favColors;
@@ -21,7 +21,7 @@ const App = () => {
         <div>
             <div>{count}</div>
             <div>{name}</div>
-            <div>{hasCorona}</div>
+            <div>{hasCar}</div>
             <ul>
                 <li>{pink}</li>
                 <li>{blue}</li>

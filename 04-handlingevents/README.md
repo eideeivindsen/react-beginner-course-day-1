@@ -32,7 +32,7 @@ const Example = () => {
 const Example = () => {
     const [someState, setSomeState] = useState(/* some initial value */)
 
-    const handleEvent = e => setSomeState(/* some reaction to the event */)
+    const handleEvent = e => setSomeState(/* update state */)
 
     return <div onClick={e => handleEvent(e)}></div>
 }
@@ -58,7 +58,7 @@ const Counter = () => {
     <React.Fragment>
         <h1>My count: {count}</h1>
         <button onClick={() => setState(count + 1)}>Increment by 1</button>
-        <button onClick={() => setState(count + 1)}>
+        <button onClick={() => setState(count + 1)}>Decrement by 1</button>
     <React.Fragment>
     )
 }
@@ -81,7 +81,7 @@ const Counter = () => {
     <React.Fragment>
         <h1>My count: {count}</h1>
         <button onClick={increment}>Increment by 1</button>
-        <button onClick={decrement}>
+        <button onClick={decrement}>Decrement by 1</button>
     <React.Fragment>
     )
 }
@@ -168,7 +168,7 @@ const Counter = () => {
 
 #### 💎 Combine A1 and A2 by using a single state Object
 
-Use A1 and A2 and combine both their states into a javaScript-Object.
+Use A1 and A2 and combine both their states into a javaScript-Object. The main component should include the behaviour from A1 and A2; incrementing and decrementing a count, and a `<div>` that changes color when hovering over it. This exercise focus on becoming comfortable with the usage and handling of javascript objects. 
 
 <details><summary>🔑 Solution</summary>
 

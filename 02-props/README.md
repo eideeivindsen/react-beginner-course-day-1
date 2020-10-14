@@ -19,7 +19,7 @@ The properties are passed to the compomonent similarly to in HTML. Rembember to 
 
 JSX elements such as `div` and `h2` also accept certain properties in addition to those in common HTML
 * `className` is used to give a component a HTML class
-* `style` is used to style the component, with css such as ``
+* `style` is used to style the component with css
 ```html
 <h1 className="header" style={ {color: 'red'} }>RED!</h1>
 ```
@@ -27,7 +27,7 @@ JSX elements such as `div` and `h2` also accept certain properties in addition t
 <br>
 
 #### 📌 A1 - Fix the `Avatar` component in `App.jsx` so that the App displays the profiles nicely side by side
-Destructure the `name` and `imageUrl` properties. Use appropriate `className` values and style in `index.css`.
+Destructure the `name` and `imageUrl` properties. Use appropriate `className` values and style in `index.css`. Ideally, the name should be displayed below the profile picture, and be centered.
 
 <details><summary>🔑 Solution</summary>
 
