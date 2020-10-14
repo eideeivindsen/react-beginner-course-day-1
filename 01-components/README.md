@@ -141,7 +141,7 @@ export default App
 <br>
 
 #### 💎 B3 - Move the new component to a separate file, and import it in `App.jsx`
-Import your compoment the same way `index.js` imports `App`, with a relative filepath and without the file extension: `import App from './App'` (substutite `App` with your component name).
+Import your compoment the same way `index.jsx` imports `App`, with a relative filepath and without the file extension: `import App from './App'` (substutite `App` with your component name).
 <details><summary>🔑 Solution</summary>
 
 ```jsx
