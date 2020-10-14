@@ -42,18 +42,15 @@ Notice that each form element needs a `name` property that will be used to deter
 
 
 ```jsx
-const [formInput, setFormInput] = useReducer(
-    (state, newState) => ({ ...state, ...newState }),
-    {
-      name: "",
-      age: ""
-    }
-  );
+const [formInput, setFormInput] = useState({
+    name: "",
+    age: ""
+  });
 
   const handleChange = (event) => {
     const name = event.target.name;
     const newValue = event.target.value;
-    setFormInput({ [name]: newValue });
+    setFormInput(prevState => ({...prevState, [name]: newValue}))
   };
 
   const { name, age } = formInput;
@@ -64,55 +61,80 @@ const [formInput, setFormInput] = useReducer(
       </form>
   )
 ```
+<br><br>
 
-#### 📌 Create a form with a controlled input for name
-Combine the above methods to create a form with a two controlled inputs: `First name` and `Last Name`. You also will have to fix the implemented `handleSubmit()` method.
+#### 📌 Create a form with two controlled inputs
+Combine the above methods to create a form with two controlled inputs: `First name` and `Last Name`. For this exercise you should create a uniqe state and a unique handler for each input element.
+
+<details><summary>Solution</summary>
+
+```jsx
+const [firstName, setFirstName] = useState("");
+const [lastName, setLastName] = useState("");
+
+const handleFirstNameChange = (event) => {
+  setFirstName(event.target.value)
+}
+
+const handleLastNameChange = (event) => {
+  setFirstName(event.target.value)
+}
+
+return (
+    <form>
+      <input type="text" value={firstName} onChange={handleFirstNameChange} />
+      <input type="text" value={lastName} onChange={handleLastNameChange} />
+    </form>
+)
+```
+</details>
+<br><br>
+
+
+#### 📌 Create a `sumbitHandler()`
+Create a `submitHandler()` that alerts the `firstName` and `lastName` when the submit button is pressed. The form should have a button that submits the form and the submit should not send you to a new page.
 
 <details><summary>Solution</summary>
 
 ```jsx
 const handleSubmit = (event) => {
     event.preventDefault();
-    alert("The form was submitted.");
+    addPerson(firstName, lastName)
   }
 
 return (
     <form onSubmit={handleSubmit}>
-        ...
+      ...
+      <input type="submit" value="Submit" />
     </form>
 )
 ```
 </details>
+<br><br>
 
 
-#### 📌 Create an arrow function without the `return` keyword
-The function should have a parameter `name`, and return `Hello <name>!`. Directly write the return value after the arrow `=>`, rather than using curly brackets and a `return` statement.
+#### 💎 Use the same state and handler for all inputs
+Try to use only ONE `state` and ONE `eventHandler` to make all input fields controlled.
 
 <details><summary>Solution</summary>
 
 ```jsx
-const greeting = (name) => `Hello ${name}`
+const [formInput, setFormInput] = useState({
+    name: "",
+    age: ""
+  });
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const newValue = event.target.value;
+    setFormInput(prevState => ({...prevState, [name]: newValue}))
+  };
+
+  return(
+    <input name="name" value={formInput.name} onChange={handleChange} />
+  )
 ```
 </details>
 
 
-#### 💎 Create an arrow function that returns another arrow function
-The function should take name as an argument, and return a function that returns `Hello`, followed by the name. The retured function should not take any arguments. You are not allowed to store the returned arrow function in a variable, but must return it directly.
-
-<details><summary>Solution</summary>
-
-```jsx
-const greeting = (name) => () => `Hello ${name}!`
-```
-</details>
-
-
-<br><br>
-
-## Destructuring
-
-
-<br><br>
-
-## Spread operator  `...`
 
