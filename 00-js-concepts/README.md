@@ -164,6 +164,7 @@ Remember that order matters! `{ width: 5, ...cube }` will first assign `width: 5
 #### 📌 C1 - Create a function that combines all the attributes from two objects in a single new object
 Assume that the two objects don't share any attributes, so that nothing will be overwritten. Note that objects must be wrapped in parentheses if returned directly from an arrow function: `=> ({})`. Otherwise, the compiler will think the object is a function body.
 <details><summary>🔑 Solution</summary>
+
 ```js
 const combine = (a, b) => ({ ...a, ...b })
 ```
