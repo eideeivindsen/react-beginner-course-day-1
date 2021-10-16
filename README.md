@@ -13,6 +13,8 @@ Hei og velkommen til introduksjonskurs i React!
 * `npm run setup`
 * `code .`
 
+Alternativt bruk [Gitpod](https://gitpod.io/#https://github.com/react-kurs/dag1)
+
 ## Intro
 Dette repoet inneholder oppgaver innenfor en rekke kategorier.
 Oppgavebeskrivelsene ligger i `README.md` filene, og leses enkest på [github](https://github.com/react-kurs/dag1). Det er anbefalt å gjøre oppgavene meket med 📌. Oppgaver merket 💎 er bonusoppgaver som kan gjøres dersom man får god tid.
